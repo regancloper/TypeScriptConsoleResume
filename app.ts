@@ -105,13 +105,13 @@ for (let i = 0; i < otherInfo.skills.length; i++) {
 }
 
 // displays prior positions at other companies
-function displayPosition(comp: string, title: string, desc: string) {
+function displayPosition(comp: string, title: string, desc: string): void {
     console.log("* " + title + " at " + comp + " - " + desc);
 }
 
 // displays skills
-function displaySkill(name: string, coolness: boolean) {
-    if (coolness == true) {
+function displaySkill(name: string, coolness: boolean): void {
+    if (coolness === true) {
         name = "BAM: " + name;
     }
     console.log("* " + name);
